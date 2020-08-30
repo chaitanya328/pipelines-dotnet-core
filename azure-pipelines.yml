@@ -1,4 +1,11 @@
 # ASP.NET Core
+- task: AzureWebApp@1
+  inputs:
+    azureSubscription: 'Azure Pass - Sponsorship(09178c54-97e2-4759-b137-a33bda88b9c0)'
+    appType: 'webApp'
+    appName: 'webapp-pipe'
+    package: '$(System.DefaultWorkingDirectory)/**/*.zip'
+    deploymentMethod: 'auto'
 # Build and test ASP.NET Core projects targeting .NET Core.
 # Add steps that run tests, create a NuGet package, deploy, and more:
 # https://docs.microsoft.com/azure/devops/pipelines/languages/dotnet-core
