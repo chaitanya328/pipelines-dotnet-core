@@ -32,9 +32,9 @@ steps:
     includePreviewVersions: true # Required for preview versions
      
 - task: AzureWebApp@1
-       inputs:
-        azureSubscription: 'Azure Pass - Sponsorship(09178c54-97e2-4759-b137-a33bda88b9c0)'
-        appType: 'webApp'
-        appName: 'webapp-pipe'
-        package: '$(System.DefaultWorkingDirectory)/**/*.zip'
-        deploymentMethod: 'auto'
+  inputs:
+    azureSubscription: 'Azure Pass - Sponsorship(09178c54-97e2-4759-b137-a33bda88b9c0)'
+    appType: 'webApp'
+    appName: 'webapp-pipe'
+    package: '$(System.DefaultWorkingDirectory)/**/*.zip'
+    deploymentMethod: 'auto'
